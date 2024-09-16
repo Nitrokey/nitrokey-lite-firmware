@@ -18,8 +18,8 @@
 #define HID_REPORT_DESC_SIZE (sizeof (hid_report_desc))
 
 static const uint8_t hid_report_desc[] = {
-  0x05, 0x01,	    /* USAGE_PAGE (Generic Desktop) */
-  0x09, 0x07,	    /* USAGE (Keypad) */
+  0x06, 0xA0, 0xFF,	    /* USAGE_PAGE (vendor-defined) */
+  0x09, 0x01,	    /* USAGE (vendor-defined) */
   0xa1, 0x01,	    /* COLLECTION (Application) */
   0x05, 0x07,	    /*   USAGE_PAGE (Key Codes) */
   0x19, 0xe0,	    /*   USAGE_MINIMUM (Keyboard LeftControl) */
